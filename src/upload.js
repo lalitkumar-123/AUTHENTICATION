@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card,Button,Form } from "react-bootstrap";
+import { Card,Form } from "react-bootstrap";
 import { storage } from "./firebase.js";
 import {Link} from 'react-router-dom';
 
@@ -36,7 +36,7 @@ export default function Upload() {
             </Form>
             {url && <img src={url} alt="" width="40%" height="40%"/>}
           </Card.Body>
-          <Link to="/xmeme.js">xmeme</Link>
+          <Link to="/xmeme.js">XMEME</Link>
       </Card>
     </>
   );

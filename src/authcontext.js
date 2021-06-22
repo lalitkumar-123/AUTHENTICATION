@@ -23,6 +23,11 @@ export function Authprovider({children})
         return auth.signInWithEmailAndPassword(email,password);
     }
 
+    function resetpassword(email)
+    {
+        return auth.sendPasswordResetEmail(email);
+    }
+
     function logout()
     {
         return auth.signOut();
@@ -40,7 +45,8 @@ export function Authprovider({children})
         currentuser,
         login,
         signup,
-        logout
+        logout,
+        resetpassword
     }
 
     return(
